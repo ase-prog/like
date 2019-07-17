@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body class="row">
+<div>
+    <img id="1" onclick="changeimg1()" src="serdechko.jpg" width="125">
+</div>
+</body>
+<script>
+    like=false
+    function changeimg1() {
+            like=!like
+            if(like===true){
+                document.getElementById('1').src="krasnoeserdce.jpg"
+            }
+            if(like===false){
+                    document.getElementById('1').src="serdechko.jpg"
+            }
+
+        
+    }
+</script>
+</html>
