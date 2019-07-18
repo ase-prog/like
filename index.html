@@ -8,19 +8,25 @@
 <div>
     <img id="1" onclick="changeimg1()" src="serdechko.jpg" width="125">
 </div>
+<h1 id="likes">99</h1>
 </body>
 <script>
     like=false
+    likes=99
     function changeimg1() {
-            like=!like
-            if(like===true){
-                document.getElementById('1').src="krasnoeserdce.jpg"
-            }
-            if(like===false){
-                    document.getElementById('1').src="serdechko.jpg"
-            }
+        like = !like
+        if (like === true) {
+            likes = likes + 1
+            document.getElementById('likes').innerHTML=likes
+            document.getElementById('1').src = "krasnoeserdce.jpg"
+        }
+        if (like === false) {
+            likes = likes - 1
+            document.getElementById('likes').innerHTML=likes
+            document.getElementById('1').src = "serdechko.jpg"
+        }
 
-        
+
     }
-</script>
+    </script>
 </html>
